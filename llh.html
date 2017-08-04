@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>刘丽花个人网页</title>
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<!--<link rel="stylesheet" type="text/css" href="css/style01.css"/>-->
+	</head>
+	<script type="text/javascript">
+		 window.onload = function(){
+		    	var html = document.documentElement;
+		    	var hWidth = html.getBoundingClientRect().width;
+				html.style.fontSize = hWidth/70 + "px";
+		}
+	</script>
+	<body>
+		<div class="navbar navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden-sm">resume</a>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="#section-2nd">个人简介</a></li>
+						<li><a href="#section-3rd">教育背景</a></li>
+						<li><a href="#section-4th">工作经验</a></li>
+						<li><a href="#section-5th">掌握技能</a></li>
+						<li><a href="#section-6th">作品展示</a></li>
+						<li><a href="#section-7th">旧时光</a></li>
+						<li><a href="#section-8th">联系方式</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<!--返回顶部-->
+		<div class="toTop"><span></span></div>
+		<div id="music" class="music">
+			<audio id="music-audio" class="audio" src="http://lxcdn.rabbitpre.com/531715f7-da56-48ba-8714-3ad383426d5d" loop="" autoplay="autoplay" preload="auto"></audio>
+			<div class="control">
+				<div class="control-after"></div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			oV = document.getElementById('music-audio');
+			oC = document.querySelector('.control');
+//			oM = document.getElementById('music');
+			
+			oC.onclick = function(){
+				if(oV.paused){
+					oV.play();
+					$('#music').removeClass('stopped')
+				}else{
+					oV.pause();
+					$('#music').addClass('stopped')
+				}
+				
+			};
+		</script>
+		<!--大图-->
+		<div id="section-1st">
+			<div class="container-fluid">
+				<div class="inf wow fadeInUp">
+					<h2>Hello,我是刘丽花</h2>
+					<p>前端开发工程师</p>
+				</div>
+				<div class="sec-1st-bg"></div>
+			</div>
+		</div>
+		
+		
+		<div class="content">
+			<div class="met-index-body" id="section-2nd">
+				<div class="container">
+					<h3 class="wow fadeInUp">个人简介</h3>
+					<div class="desc row">
+						<div class="pic wow flipInX"></div>
+						<ul class="main row">
+							<li class="col-lg-4 col-md-3 col-sm-2"></li>
+							<li class="col-lg-2 col-md-3 col-sm-4 col-xs-12 wow fadeInLeftBig">
+								<p>姓名: <span>刘丽花</span></p>
+								<p>性别：<span>女</span></p>
+								<p>民族：<span>汉族</span></p>
+								<p>学历：<span>本科</span></p>
+								<p>现居地：<span>广州</span></p>
+								<p>籍贯：<span>广东梅州</span></p>
+							</li>
+							<li class="col-lg-3 col-md-4 col-sm-5 col-xs-12 wow fadeInRightBig">
+								<p>&nbsp;</p>
+								<p>出生日期：<span>1990.12.12</span></p>	
+								<p>政治面貌：<span>中国共产党</span></p>
+								<p>毕业院校：<span>广东海洋大学</span></p>
+								<p>专业：<span>森林资源保护与游憩</span></p>
+								<p>兴趣：<span>IT、围棋、旅游、看书</span></p>
+							</li>
+							<li class="col-lg-3 col-md-2 col-sm-1"></li>
+						</ul>
+					</div>	
+				</div>
+			</div>
+			
+			<div class="met-index-body" id="section-3rd">
+				<div class="lazy">
+					<div class="container">
+						<h3 class="wow fadeInUp">教育背景</h3>
+						<div class="main">
+							<ul>
+								<li class="row">
+									<div class="theme col-xs-10 col-sm-12 col-md-3 col-lg-3 wow bounceInLeft">
+										<span class="school wow slideInLeft">广东海洋大学</span>
+										<span class="time wow slideInRight">2010.09~2014.07</span>
+									</div>
+									<div class="desc col-xs-10 col-sm-12 col-md-9 col-lg-9 wow bounceInRight">
+										<h4>森林资源保护与游憩&nbsp;&nbsp;&nbsp;本科</h4>
+										<p>主修：景观生态学、森林环境学、地质地貌学基础、旅游心理学、公共关系学、狩猎学、保护生物学原理、有害生物防治学、遥感技术与地理信息系统、森林游憩等。</p>
+									</div>
+								</li>
+								<li class="row">
+									<div class="theme col-xs-10 col-sm-12 col-md-3 col-lg-3 wow bounceInLeft">技能证书</div>
+									<div class="desc col-xs-10 col-sm-12 col-md-9 col-lg-9 wow bounceInRight">
+										<p>大学四六级证书；BEC中级B1证书；导游证书；会计从业资格证书；人力资源管理三级证书</p>
+									</div>
+								</li>
+								<li class="row">
+									<div class="theme col-xs-10 col-sm-12 col-md-3 col-lg-3 wow bounceInLeft">奖项荣誉</div>
+									<div class="desc col-xs-10 col-sm-12 col-md-9 col-lg-9 wow bounceInRight">
+										<p>2010-2011学年荣获国家励志奖学金5000元；</p>
+										<p>2010-2011学年荣获优秀学生二等奖学金；</p>
+										<p>2011-2012学年荣获优秀学生三等奖学金；</p>
+										<p>2012-2013学年荣获优秀学生三等奖学金；</p>
+										<p>2013-2014学年荣获优秀学生三等奖学金；</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="met-index-body" id="section-4th">
+				<!--<div class="bg-gif"></div>
+				<div class="bg-cloud"></div>-->
+				<div class="container">
+					<h3 class="wow fadeInUp">工作经验</h3>
+					<div class="mian row">
+						<div class="preface col-lg-5 col-md-5 col-sm-11 col-sm-11">
+							<h4 class="wow slideInUp">前言</h4>
+							<p class="wow slideInUp">&nbsp;&nbsp;&nbsp;&nbsp;毕业后一直从事旅游行业，在某种机缘下开始自学web的前端开发，而后转到了IT行业。虽是半路出家，但本人学习力比较强，网上学习资料丰富，也花了大量时间研究web的前端开发；加上一年多的工作经验，掌握了更多的技术。</p>
+						</div>
+						<div class="exprient col-lg-5 col-md-5 col-sm-11 col-sm-11">
+							<div class="year">
+								<span class="circle"></span>
+								<div class="info wow slideInUp">
+									<h4>广州云树信息科技有限公司</h4>
+									<p class="role">web前端开发工程师</p>
+									<p class="time">2016.3—2017.7</p>
+									<p class="des">根据UI设计师提供的设计图，完成网页样式排版布局，实现网页静态功能；使用原生js和jquery等脚本语言配合后端工程师完成产品前台的脚本编码工作。</p>
+								</div>
+							</div>
+							<div class="year">
+								<span class="circle"></span>
+								<div class="info wow slideInUp">
+									<h4>桂林金天下国际旅游公司</h4>
+									<p class="role">销售与策划</p>
+									<p class="time">2014.1—2016.2</p>
+									<p class="des">产品策划，制作每月微信广告图，节日广告图。对携程网、途牛网、同程网、组团社等销售产品</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="met-index-body" id="section-5th" >
+				<div class="container">
+					<h3 class="wow fadeInUp">掌握技能</h3>
+					<p class="desc wow fadeIn">
+						熟练使用DIV-CSS，HTML基本布局以及HTML5+CSS3新特性，能根据设计图及文档独立完成页面制作；熟练使用响应式布局，盒模型及媒体查询进行移动端PC端交替；熟练使用Photoshop，HBuilder，Sublime Text等工具软件；熟悉IE，FireFox，Firefox，chrom等浏览器对数据的操作及兼容问题;熟练使用JavaScript和JQuery实现页面上的多种动态效果及交互；掌握Ajax运作机制，操作DOM、BOW、JSON等技术，熟练json数据书写，可以熟练运用jsonp解决ajax跨域问题；掌握bootstrap，vue等框架...
+					</p>
+					
+					<div class="main">
+						<ul class="row">
+							<li class="col-xs-12 col-sm-6  col-md-3  skill wow fadeInDown ">
+								<span class="chart" data-percent="80">
+									<span class="percent" ></span>
+									<canvas id="process1" width="152" height="152"></canvas>
+								</span>
+								<h4>HTML5</h4>
+							</li>
+							<li class="col-xs-12 col-sm-6 col-md-3  skill wow fadeInDown">
+								<span class="chart" data-percent="80">
+									<span class="percent"></span>
+									<canvas width="152" height="152"></canvas>
+								</span>
+								<h4>CSS3</h4>
+							</li>
+							<li class="col-xs-12 col-sm-6 col-md-3  skill wow flipInX">
+								<span class="chart" data-percent="80">
+									<span class="percent"></span>
+									<canvas width="152" height="152"></canvas>
+								</span>
+								<h4>JS</h4>
+							</li>
+							<li class="col-xs-12  col-sm-6  col-md-3  skill wow fadeInRight">
+								<span class="chart" data-percent="80">
+									<span class="percent" ></span>
+									<canvas width="152" height="152"></canvas>
+								</span>
+								<h4>jQuery</h4>
+							</li>
+							<li class="col-xs-12 col-sm-6 col-md-3  skill wow fadeInDown">
+								<span class="chart" data-percent="70">
+									<span class="percent"></span>
+									<canvas width="152" height="152"></canvas>
+								</span>
+								<h4>Bootstrap</h4>
+							</li>
+							<li class="col-xs-12 col-sm-6  col-md-3 skill wow fadeInDown">
+								<span class="chart" data-percent="60">
+									<span class="percent"></span>
+									<canvas width="152" height="152"></canvas>
+								</span>
+								<h4>NodeJS</h4>
+							</li>
+							
+							<li class="col-xs-12 col-sm-6  col-md-3  skill wow  flipInX">
+								<span class="chart" data-percent="70">
+									<span class="percent" ></span>
+									<canvas width="152" height="152"></canvas>
+								</span>
+								<h4>VueJS</h4>
+							</li>
+							<li class="col-xs-12 col-sm-6 col-md-3 skill wow fadeInRight">
+								<span class="chart" data-percent="60">
+									<span class="percent" ></span>
+									<canvas width="152" height="152"></canvas>
+								</span>
+								<h4>Photoshop</h4>
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			
+			<!----------------------------------------------------------->
+			
+			
+			<div class="met-index-body" id="section-6th">
+				<div class="container">
+					<h3 class="wow fadeInUp">作品展示</h3>
+					<div class="main">
+						<ul class="row">
+							<li class="col-md-4 col-sm-6 col-xs-12 wow fadeInDown">
+								<a href="http://www.ydqstea.com/index.html" target="_blank" style="background: url(img/002.png) no-repeat center;">英德市旗山茶叶有限公司</a>
+							</li>
+							<li class="col-md-4 col-sm-6 col-xs-12 wow flipInX">
+								<a href="http://www.probtain.com/index.php/list/1.html" target="_blank" style="background: url(img/003.png) no-repeat center;">美润股份</a>
+							</li>
+							<li class="col-md-4 col-sm-6 col-xs-12 wow fadeInRight">
+								<a href="https://sweetllh.github.io/wine/home.html" target="_blank" style="background: url(img/004.png) no-repeat center;">葡萄酒</a>
+							</li>
+							<li class="col-md-4 col-sm-6 col-xs-12 wow flipInX">
+								<a href="https://sweetllh.github.io/kingzhuyun/index.html" target="_blank" style="background: url(img/005.png) no-repeat center;">金猪云</a>
+							</li>
+							<li class="col-md-4 col-sm-6 col-xs-12 wow fadeInDown">
+								<a href="http://m.analysys.cn/" target="_blank" style="background: url(img/006.png) no-repeat center;">易观</a>
+							</li>
+							<li class="col-md-4 col-sm-6 col-xs-12 wow fadeInRight">
+								<a href="https://sweetllh.github.io/xixi-hospital/index.html" target="_blank" style="background: url(img/007.png) no-repeat center;">无锡锡西新城医院官网专题系列</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+			
+			
+			<!----------------------------------------------------------->
+			<div class="met-index-body" id="section-7th">
+				<div class="container">
+					<h3 class="wow slideInUp">旧时光</h3>
+					<p class="desc wow fadeIn">平平仄仄的流年</p>
+					<ul id="imgs" class="row">
+						<li class="col-lg-4 col-md-4 col-sm-6 col-sx-12 wow zoomInLeft">
+							<div class="img-holder">
+								<img src="img/beihai03.jpg" alt="北海" />
+							</div>
+							<div class="details">
+								<h4>北海老街</h4>
+								<p>吆喝声声今又在，此音非是旧时音..</p>
+							</div>
+						</li>
+						
+						<li class="col-lg-4 col-md-4 col-sm-6 col-sx-12 wow zoomInDown">
+							<div class="img-holder">
+								<img src="img/junior01.jpg" alt="大三" />
+							</div>
+							<div class="details">
+								<h4>乡会</h4>
+								<p>布衣之交..</p>
+							</div>
+						</li>
+						
+						<li class="col-lg-4 col-md-4 col-sm-6 col-sx-12 wow zoomInRight">
+							<div class="img-holder">
+								<img src="img/xhui01.jpg" alt="乡会" />
+							</div>
+							<div class="details">
+								<h4>乡会迎新晚会</h4>
+								<p>乡会迎新晚会..</p>
+							</div>
+						</li>
+						<li class="col-lg-4 col-md-4 col-sm-6 col-sx-12 wow bounceInLeft">
+							<div class="img-holder">
+								<img src="img/xianghui03.jpg" alt="乡会" />
+							</div>
+							<div class="details">
+								<h4>足球杯夺冠</h4>
+								<p>足球杯夺冠..</p>
+							</div>
+						</li>
+						<li class="col-lg-4 col-md-4 col-sm-6 col-sx-12 wow bounceInRight">
+							<div class="img-holder">
+								<img src="img/universite01.jpg" alt="湖光岩" />
+							</div>
+							<div class="details">
+								<h4>湖光岩</h4>
+								<p>青春纪念册..</p>
+							</div>
+						</li>
+						<li class="col-lg-4 col-md-4 col-sm-6 col-sx-12 wow bounceInUp">
+							<div class="img-holder">
+								<img src="img/junior04.jpg" alt="毕业游" />
+							</div>
+							<div class="details">
+								<h4>班级毕业游</h4>
+								<p>人生难得是欢聚..</p>
+							</div>
+						</li>
+						<li class="col-lg-4 col-md-4 col-sm-6 col-sx-12 wow slideInUp">
+							<div class="img-holder">
+								<img src="img/lijiang.jpg" alt="丽江" />
+							</div>
+							<div class="details">
+								<h4>丽江大研古镇</h4>
+								<p>翠色山峦下，商居掩古城。花溪迎曲巷，岁月久悠增..</p>
+							</div>
+						</li>
+						<li class="col-lg-4 col-md-4 col-sm-6 col-sx-12 wow slideInUp">
+							<div class="img-holder">
+								<img src="img/luguhu.jpg" alt="泸沽湖" />
+							</div>
+							<div class="details">
+								<h4>泸沽湖</h4>
+								<p>湖光美，舟上戏烟波。心漾涟漪人欲醉..</p>
+							</div>
+						</li>
+						<li class="col-lg-4 col-md-4 col-sm-6 col-sx-12 wow slideInUp">
+							<div class="img-holder">
+								<img src="img/liguhu04.jpg" alt="泸沽湖" />
+							</div>
+							<div class="details">
+								<h4>泸沽湖</h4>
+								<p>神山仙岛画湖中，日照三时景不同。</p>
+							</div>
+						</li>
+						<li class="col-lg-4 col-md-4 col-sm-6 col-sx-12 wow slideInUp">
+							<div class="img-holder">
+								<img src="img/cangshan.jpg" alt="苍山洱海" />
+							</div>
+							<div class="details">
+								<h4>大理苍山洱海</h4>
+								<p>风流菩提树，花香叶榆关；冷月眠洱海，晴雪点苍山。野寺听梅语，青灯窥鹤谈。三千红尘路，一念得天然。</p>
+							</div>
+						</li>
+						<li class="col-lg-4 col-md-4 col-sm-6 col-sx-12 wow slideInUp">
+							<div class="img-holder">
+								<img src="img/kunming.jpg" alt="昆明" />
+							</div>
+							<div class="details">
+								<h4>昆明</h4>
+								<p>四季看花花不老，一江春月是昆明..</p>
+							</div>
+						</li>
+						<li class="col-lg-4 col-md-4 col-sm-6 col-sx-12 wow slideInUp">
+							<div class="img-holder">
+								<img src="img/fh.jpg" alt="凤凰古城" />
+							</div>
+							<div class="details">
+								<h4>湘西凤凰古城</h4>
+								<p>凤凰古城因沈从文的《边城》一书而渐为人知，守候这一方土地的千百年时光..</p>
+							</div>
+						</li>
+						<li class="col-lg-4 col-md-4 col-sm-6 col-sx-12 wow slideInUp">
+							<div class="img-holder">
+								<img src="img/fh02.jpg" alt="沱江" />
+							</div>
+							<div class="details">
+								<h4>凤凰古城沱江的跳跳岩</h4>
+								<p>抬眼望，两岸是古旧的吊脚楼..</p>
+							</div>
+						</li>
+						<li class="col-lg-4 col-md-4 col-sm-6 col-sx-12 wow slideInUp">
+							<div class="img-holder">
+								<img src="img/gradute02.jpg" alt="毕业" />
+							</div>
+							<div class="details">
+								<h4>毕业</h4>
+								<p>在风里，在云里，浅唱在年华的角落里..</p>
+							</div>
+						</li>
+						<li class="col-lg-4 col-md-4 col-sm-6 col-sx-12 wow slideInUp">
+							<div class="img-holder">
+								<img src="img/gradute04 .jpg" alt="乡会" />
+							</div>
+							<div class="details">
+								<h4>乡会2010级最后的相聚</h4>
+								<p>分别在即，纵有千言万语一时凝噎..</p>
+							</div>
+						</li>
+						<li class="col-lg-4 col-md-4 col-sm-6 col-sx-12 wow slideInUp">
+							<div class="img-holder">
+								<img src="img/gradute07.jpg" alt="舍友" />
+							</div>
+							<div class="details">
+								<h4>舍友</h4>
+								<p>桃花源水，桥之友谊..</p>
+							</div>
+						</li>
+
+						<li class="col-lg-4 col-md-4 col-sm-6 col-sx-12 wow slideInUp">
+							<div class="img-holder">
+								<img src="img/gradute09.jpg" alt="舍友" />
+							</div>
+							<div class="details">
+								<h4>凤凰花开，毕业之时</h4>，
+								<p>染红的山坡道别的路口，青春带走了什么留下了什么，时光的河入海流终于我们分头走
+没有哪个港口是永远的停留</p>
+							</div>
+						</li>
+						<li class="col-lg-4 col-md-4 col-sm-6 col-sx-12 wow slideInUp">
+							<div class="img-holder">
+								<img src="img/xiangelila.jpg" alt="香格里拉" />
+							</div>
+							<div class="details">
+								<h4>香格里拉</h4>
+								<p>那一世，转山转水转佛塔，不为修来世，只为途中与你相见，它就是香格里拉</p>
+							</div>
+						</li>
+						<li class="col-lg-4 col-md-4 col-sm-6 col-sx-12 wow slideInUp">
+							<div class="img-holder">
+								<img src="img/xizang.jpg" alt="西藏" />
+							</div>
+							<div class="details">
+								<h4>西藏徒步路上的一个寺庙</h4>
+								<p>转动一日经轮可以圆满一亿心咒的功德..</p>
+							</div>
+						</li>
+						<li class="col-lg-4 col-md-4 col-sm-6 col-sx-12 wow slideInUp">
+							<div class="img-holder">
+								<img src="img/xian02.jpg" alt="西安" />
+							</div>
+							<div class="details">
+								<h4>西安大雁塔</h4>
+								<p>玄奘译经垂千秋，慈恩古刹闻九州。雁塔巍然立大地，曲江陂头流饮酒。</p>
+							</div>
+						</li>
+						
+						<li class="col-lg-4 col-md-4 col-sm-6 col-sx-12 wow slideInUp">
+							<div class="img-holder">
+								<img src="img/wuyuan.jpg" alt="婺源" />
+							</div>
+							<div class="details">
+								<h4>婺源</h4>
+								<p>莫问庭院深几许，只看巷里人归处。骚人有幸更何如..</p>
+							</div>
+						</li>
+						<li class="col-lg-4 col-md-4 col-sm-6 col-sx-12 wow slideInUp">
+							<div class="img-holder">
+								<img src="img/Venice.jpg" alt="澳门" />
+							</div>
+							<div class="details">
+								<h4>澳门威尼斯</h4>
+								<p>酒店以威尼斯水乡为主题，酒店范围内是充满威尼斯特色拱桥、小运河及石板路..</p>
+							</div>
+						</li>
+						<li class="col-lg-4 col-md-4 col-sm-6 col-sx-12 wow slideInUp">
+							<div class="img-holder">
+								<img src="img/waterfall.jpg" alt="德天瀑布" />
+							</div>
+							<div class="details">
+								<h4>德天跨国大瀑布</h4>
+								<p>跨国瀑布两国连，气势磅礴惊云天。飞流激起千重浪，十里闻声蔚壮观。</p>
+							</div>
+						</li>
+						<li class="col-lg-4 col-md-4 col-sm-6 col-sx-12 wow slideInUp">
+							<div class="img-holder">
+								<img src="img/bali02.jpg" alt="巴厘岛" />
+							</div>
+							<div class="details">
+								<h4>巴厘岛</h4>
+								<p>印度洋彼岸..</p>
+							</div>
+						</li>
+						<li class="col-lg-4 col-md-4 col-sm-6 col-sx-12 wow slideInUp">
+							<div class="img-holder">
+								<img src="img/dongguang.jpg" alt="东莞" />
+							</div>
+							<div class="details">
+								<h4>东莞下坝坊</h4>
+								<p>在夜晚来临之际，走进青花醉月，或者蔷薇之光，或者半朵悠莲，点上一杯咖啡或者奶茶，还有喜欢的点心，悠闲地感受古村浓浓的艺术气息..</p>
+							</div>
+						</li>
+						<li class="col-lg-4 col-md-4 col-sm-6 col-sx-12 wow slideInUp">
+							<div class="img-holder">
+								<img src="img/ylshan.jpg" alt="岳麓书院" />
+							</div>
+							<div class="details">
+								<h4>长沙岳麓书院</h4>
+								<p>是非审之于已，毁誉听之于人，得失安之于数，陟岳麓峰头，朗月清风，太极悠然可会；君亲恩何以酬，民物命何以立，圣贤道何以传，登赫曦台上，衡云湘水，斯文定有攸归。</p>
+							</div>
+						</li>
+						<li class="col-lg-4 col-md-4 col-sm-6 col-sx-12 wow slideInUp">
+							<div class="img-holder">
+								<img src="img/shwty.jpg" alt="桂林" />
+							</div>
+							<div class="details">
+								<h4>桂林世外桃源</h4>
+								<p>陶渊明笔下的世外桃源，溪水深流，不知有汉，无论魏晋..</p>
+							</div>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+			
+			
+			
+			<!----------------------------------------------------------->
+			<div class="met-index-body" id="section-8th">
+				<div class="lazy">
+					<div class="container">
+						<h3 class="wow fadeInUp">联系方式</h3>
+						<ul class="main">
+							<li class="pic wow slideInLeft"><span></span></li>
+							<li class="contect wow slideInRight">
+								<p>QQ：842412946</p>
+								<p>电话：15011993587</p>
+								<p>邮箱：842412946@qq.com</p>
+								<p>地址：广州市天河区元岗北街</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>			
+		</div>
+	</body>
+	<script src="js/jquery-1.11.1.js" type="text/javascript" charset="utf-8"></script>
+	<script src="bootstrap/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/wow.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/easypiechar.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/style.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
+			var wow = new WOW({
+				boxClass: 'wow',
+				animateClass: 'animated',
+				offset: 150,
+				mobile: true,
+				live: true
+			});
+	
+			wow.init();
+		};
+	</script>
+</html>
